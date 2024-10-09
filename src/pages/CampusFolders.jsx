@@ -21,6 +21,9 @@ const CampusFolders = () => {
   const { data, isLoading } = useQuery({
     queryKey: ["campus"],
     queryFn: () => listFolders(),
+    onSuccess: (data) => {
+      console.log(data);
+    }
   });
   const { setSelectedFolder } = folderStore((state) => state);
 
