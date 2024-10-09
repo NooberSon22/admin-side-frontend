@@ -11,6 +11,7 @@ const CampusContainerFolder = () => {
       console.log(data);
     },
   });
+  console.log("run");
   const { campusName } = useParams();
 
   return (
